@@ -38,7 +38,11 @@ for x in range(0, len(list_id)):
     data_list.append(diem)
 
 # Tạo tệp CSV và ghi dữ liệu vào đó
+<<<<<<< HEAD
 with open('data_BenTre.csv', 'a', newline='') as csv_file:
+=======
+with open('data_VinhLong.csv', 'a', newline='') as csv_file:
+>>>>>>> 88bc88c892f84074c7001cd98ff2686b9bce09cf
     fieldnames = ['SBD', 'Toan', 'Van', 'Ngoai Ngu', 'Vat Ly', 'Hoa Hoc', 'Sinh Hoc', 'DTBTN', 'Lich Su', 'Dia Ly', 'GDCD', 'DTBXH']
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
     
