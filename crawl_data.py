@@ -3,10 +3,10 @@ import csv
 
 # Khởi tạo một danh sách để lưu trữ dữ liệu
 data_list = []
-#12117
-id_province = "56"
-start_row = 12001                                                       
-end_row = 12117
+
+id_province = "44"
+start_row = 12001
+end_row = 14334
 list_id = []
 for x in range(start_row, end_row + 1):
     student_id = int(id_province + str(x).zfill(6))
@@ -39,10 +39,14 @@ for x in range(0, len(list_id)):
 
 # Tạo tệp CSV và ghi dữ liệu vào đó
 <<<<<<< HEAD
+<<<<<<< HEAD
 with open('data_BenTre.csv', 'a', newline='') as csv_file:
 =======
 with open('data_VinhLong.csv', 'a', newline='') as csv_file:
 >>>>>>> 88bc88c892f84074c7001cd98ff2686b9bce09cf
+=======
+with open('data_BinhDuong.csv', 'a', newline='') as csv_file:
+>>>>>>> add0cc1c287d9f411a03a1d9d3d0f9c23ecc2829
     fieldnames = ['SBD', 'Toan', 'Van', 'Ngoai Ngu', 'Vat Ly', 'Hoa Hoc', 'Sinh Hoc', 'DTBTN', 'Lich Su', 'Dia Ly', 'GDCD', 'DTBXH']
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
     
